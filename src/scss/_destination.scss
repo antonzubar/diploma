@@ -1,0 +1,21 @@
+#destination {
+  background-color: #f2fefe;
+
+  .destination-first-row {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .headline-text {
+        color: #29d9c2;
+        font-size: 67px;
+      }
+  }
+
+  .destination-second-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

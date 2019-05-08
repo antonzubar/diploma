@@ -1,0 +1,116 @@
+#contact {
+  background-image: url(../img/contact/background.png);
+  background-size: cover;
+  padding-bottom: 168px;
+
+  .contact-first {
+    display: flex;
+    justify-content: center;
+
+    .headline-text {
+      margin-top: 70px;
+      font-size: 67px;
+      margin-bottom: 85px;
+    }
+  }
+
+  .contact-second {
+    .or {
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      color: white;
+    }
+
+    .contact-details {
+      color: white;
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 12px;
+
+      &__headline {
+        font-size: 44px;
+        margin-bottom: 44px;
+      }
+
+      &__description {
+        margin-left: 5px;
+      }
+
+      &__find-map {
+        margin-left: 21px;
+        margin-bottom: 0;
+        display: block;
+
+        a {
+          color: #fff772;
+        }
+      }
+
+      &__line {
+        padding-bottom: 10px;
+
+        img {
+          vertical-align: text-top;
+        }
+      }
+    }
+
+    .contact-form {
+      text-align: right;
+      position: relative;
+
+      div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 57px 57px 98px;
+        grid-gap: 15px;
+      }
+
+      input {
+        padding: 20px 25px;
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        border-radius: 8px;
+        box-sizing: border-box;
+        border: 1px solid #c7c7c7;
+      }
+
+      &__email-field {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+
+      &__company-field {
+        grid-column-end: 2;
+      }
+
+      &__subject-field {
+        grid-column-start: 2;
+      }
+
+      &__message-field {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+
+      &__submit-button {
+        @extend .button;
+        background-color: #b5ed84;
+        transition: background-color 0.2s linear;
+        position: absolute;
+        right: 15px;
+        bottom: -89px;
+        padding: 22px 27px;
+        font-size: 15px;
+        color: white;
+
+        &:hover {
+          background-color: #a7d77b;
+        }
+      }
+    }
+  }
+}
