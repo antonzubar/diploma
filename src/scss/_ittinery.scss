@@ -1,0 +1,53 @@
+#ittinery {
+
+  .headline-text {
+    color: #29d9c2;
+    font-size: 67px;
+    margin: 70px 0;
+  }
+
+  .paragraph-text {
+    line-height: 35px;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 145px;
+  }
+
+  .ittinery-schedule {
+
+    &__header {
+      font-family: 'Lato', sans-serif;
+      font-size: 18px;
+      font-weight: 800;
+      color: white;
+      padding: 25px 0;
+      background-image: url('../img/ittinery/ittinery-background.png');
+      border-radius: 10px 10px 0 0;
+    }
+
+    &__calendar {
+      height: 640px;
+    background-color: #ffffa6;
+      border-radius:  0 0 10px 10px;
+    }
+
+    .ittinery-schedule__drag-label {
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+      font-weight: 800;
+      color: #d8cb7d;
+      padding: 25px;
+      border-radius: 10px;
+      background-color: #fbf6a3;
+      border-style: dashed;
+    }
+  }
+
+  .ittinery-list {
+
+    &__header {
+      @extend .ittinery-schedule__header;
+      color: #29d9c2;
+      background-image: none;
+    }
+  }
+}
