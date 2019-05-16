@@ -3,7 +3,7 @@
   .headline-text {
     color: #29d9c2;
     font-size: 67px;
-    margin: 70px 0;
+    margin: 70px 0 50px;
   }
 
   .paragraph-text {
@@ -26,8 +26,8 @@
 
     &__calendar {
       height: 640px;
-    background-color: #ffffa6;
-      border-radius:  0 0 10px 10px;
+      background-color: #ffffa6;
+      border-radius: 0 0 10px 10px;
     }
 
     .ittinery-schedule__drag-label {
@@ -40,14 +40,55 @@
       background-color: #fbf6a3;
       border-style: dashed;
     }
+
+    &__buttons {
+      margin-top: 17px;
+      margin-bottom: 100px;
+      height: 64px;
+    }
+
+    &__pdf-button {
+      @extend .button;
+      background-color: #c3f37f;
+      color: white;
+      padding: 20px 18px;
+      display: flex;
+
+      img {
+        margin-right: 15px;
+        align-self: center;
+      }
+    }
+
+    &__print-button {
+      @extend .button;
+      background-color: #3ddbc7;
+      color: white;
+      margin-left: 25px;
+      padding: 20px 25px;
+
+      img {
+        margin-right: 15px;
+        align-self: center;
+      }
+
+    }
   }
 
   .ittinery-list {
 
     &__header {
       @extend .ittinery-schedule__header;
-      color: #29d9c2;
+      color: #3eddc2;
       background-image: none;
+    }
+
+    &__headline {
+      background-image: linear-gradient(to right, #3eddc8, #3eddc8);
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      background-size: 70px 3px;
+      padding-bottom: 13px;
     }
   }
 }
