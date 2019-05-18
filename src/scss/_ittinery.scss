@@ -53,6 +53,11 @@
       color: white;
       padding: 20px 18px;
       display: flex;
+      transition: background-color 0.2s linear;
+
+      &:hover {
+        background-color: #a2ee38;
+      }
 
       img {
         margin-right: 15px;
@@ -66,6 +71,11 @@
       color: white;
       margin-left: 25px;
       padding: 20px 25px;
+      transition: background-color 0.2s linear;
+
+      &:hover {
+        background-color: #029e89;
+      }
 
       img {
         margin-right: 15px;
@@ -89,6 +99,70 @@
       background-repeat: no-repeat;
       background-size: 70px 3px;
       padding-bottom: 13px;
+    }
+
+    &__controls {
+      margin-bottom: 100px;
+      margin-left: 10px;
+    }
+
+    &__search-icon {
+      align-self: center;
+    }
+
+    &__select-label {
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: #29d9c2;
+      padding: 0;
+    }
+
+    &__place-select {
+      border: none;
+      color: #bcbcbc;
+    }
+
+    &__list-of-places {
+      margin-left: 10px;
+    }
+
+    &__place {
+      border: 1px solid #e8e8e8;
+      padding: 12px 20px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      -webkit-box-shadow: 0px 1px 9px -6px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 1px 9px -6px rgba(0,0,0,0.75);
+      box-shadow: 0px 1px 9px -6px rgba(0,0,0,0.75);
+    }
+
+    &__place-name {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 24px;
+      color: #626262;
+    }
+
+    &__time-label {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      color: #cdcdcd;
+    }
+
+    &__estimated-time {
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      color: #23c6b6;
+    }
+
+    &__view-details {
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      color: #23c6b6;
     }
   }
 }
