@@ -25,9 +25,12 @@
   .destination-third-row {
 
     input {
+      background: url(../img/destination/search.png) no-repeat scroll 10px 10px;
+      background-color: white;
       border-radius: 20px;
       border: 1px solid #e8e8e8;
       padding: 7px 11px;
+      padding-left:30px;
       font-size: 14px;
       font-family: 'Lato', sans-serif;
       font-weight: 500;
@@ -35,6 +38,8 @@
 
       &::placeholder {
         color: #b5b5b5;
+        font-style: italic;
+        padding-left: 10px;
       }
     }
 
@@ -45,6 +50,66 @@
         &:hover {
           color: #777777;
         }
+      }
+    }
+  }
+
+  .destination-fourth-row {
+    .container {
+      margin-top: 20px;
+      padding: 0;
+    }
+    .page {
+      display: none;
+    }
+    .page-active {
+      display: block;
+      background-color: transparent;
+      padding: 0;
+    }
+
+    .big-place {
+      background-image: url(../img/destination/1_object.png);
+      background-size: cover;
+
+      &__object-type {
+        margin-bottom: 35px;
+      }
+
+      &__object-name {
+        font-family: 'Lato', sans-serif;
+        font-size: 30px;
+        font-weight: 300;
+        color: #01a2a6;
+      }
+
+      &__object-description {
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+        font-weight: 800;
+        color: #777777;
+        line-height: 32px;
+        margin-bottom: 0;
+      }
+
+      &__description {
+        background-color: rgba(255,255,255, 0.9);
+        padding: 50px 40px 75px 45px;
+      }
+    }
+
+    .small-place {
+
+      &__description {
+        padding: 120px 350px 40px 33px;
+      }
+
+      &__object-name {
+        @extend .big-place__object-name;
+      }
+
+      &__object-description {
+        @extend .big-place__object-description;
       }
     }
   }
