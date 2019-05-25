@@ -1,10 +1,10 @@
 $('#pagination-demo').twbsPagination({
-  totalPages: 5,
+  totalPages: 6,
   // the current page that show on start
   startPage: 1,
 
   // maximum visible pages
-  visiblePages: 5,
+  visiblePages: 6,
 
   initiateStartPageClick: true,
 
@@ -15,10 +15,10 @@ $('#pagination-demo').twbsPagination({
   hrefVariable: '{{number}}',
 
   // Text labels
-  first: 'First',
-  prev: 'Previous',
-  next: 'Next',
-  last: 'Last',
+  first: '<<',
+  prev: '<',
+  next: '>',
+  last: '>>',
 
   // carousel-style pagination
   loop: false,

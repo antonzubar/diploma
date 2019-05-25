@@ -110,6 +110,61 @@
 
       &__object-description {
         @extend .big-place__object-description;
+
+        span {
+          font-weight: 300;
+        }
+      }
+
+      &__visual {
+        background-image: url(../img/destination/2_object.png);
+        background-size: cover;
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        .small-place__icon-holder {
+          background-color: white;
+          width: 154px;
+          height: 154px;
+          border-radius: 50%;
+          align-self: center;
+
+          img {
+            align-self: center;
+          }
+        }
+      }
+    }
+
+    #pagination-demo {
+
+      align-items: center;
+
+      .first a, .prev a, .next a, .last a {
+        font-family: inherit;
+      }
+
+      .page {
+        display: inline-block;
+      }
+
+      li.active {
+        a {
+          font-size: 24px;
+          color: #01a2a6;
+        }
+      }
+
+      
+      .page-link {
+
+        border: none;
+        background-color: transparent;
+        padding: 5px;
+        color: #acacac;
+        font-family: 'ChunkFive', sans-serif;
+        font-size: 18px;
       }
     }
   }
