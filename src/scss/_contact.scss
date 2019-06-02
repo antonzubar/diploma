@@ -114,3 +114,20 @@
     }
   }
 }
+
+@media screen and (max-width: 993px) {
+  #contact .contact-second .or {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  #contact .contact-second .contact-form div {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      margin-bottom: 10px;
+    }
+  }
+}
