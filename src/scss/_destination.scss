@@ -169,3 +169,26 @@
     }
   }
 }
+
+@media screen and (max-width: 993px) {
+  #destination .destination-fourth-row .small-place__visual {
+    display: none;
+  }
+  #destination .destination-fourth-row .small-place__description {
+    padding: 20px 40px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #destination .destination-first-row {
+    flex-direction: column;
+  }
+
+  #destination .destination-third-row {
+    flex-direction: column;
+
+    div {
+      margin-bottom: 10px;
+    }
+  }
+}

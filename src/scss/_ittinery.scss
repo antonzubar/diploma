@@ -212,3 +212,37 @@
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
   filter: alpha(opacity=20);
 }
+
+@media screen and (max-width: 1200px) {
+  #ittinery .ittinery-schedule__calendar {
+    height: auto;
+  }
+  #ittinery .ittinery-list__controls {
+    margin-bottom: 10px;
+  }
+
+  #ittinery .ittinery-list__place {
+    height: auto;
+  }
+
+  #ittinery .ittinery-list__place-name {
+    font-size: 16px;
+  }
+
+  #ittinery .ittinery-schedule__buttons {
+    margin-bottom: 40px;
+  }
+
+  #ittinery .ittinery-list__list-of-places {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+
+  .set-ittinery {
+    display: flex;
+    flex-direction: column;
+  }
+
+}

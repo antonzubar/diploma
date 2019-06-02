@@ -113,3 +113,26 @@ header {
     color: #01a2a6;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .menu {
+    li {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 993px) {
+  #header {
+    .row {
+      div {
+        display: flex;
+        justify-content: center;
+
+        a {
+          padding-bottom: 30px;
+        }
+      }
+    }
+  }
+  }
