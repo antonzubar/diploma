@@ -15,6 +15,15 @@
     .helper-text {
       @extend .paragraph-text;
       color: #aeaeae;
+
+      img {
+        border: 2px solid transparent;
+        border-radius: 50%;
+
+        &:hover {
+          border: 2px solid;
+        }
+      }
     }
   }
 

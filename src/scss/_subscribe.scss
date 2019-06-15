@@ -37,6 +37,7 @@
     border-radius: 8px 0 0 8px;
     box-sizing: border-box;
     border: 1px solid #7ca83f;
+    border-right: none;
   }
 
   .subscribe-button {
@@ -48,5 +49,22 @@
     background-color: #01a2a6;
     color: white;
     margin-left: -5px;
+    border-left: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #subscribe .subscribe-field {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  #subscribe .subscribe-row {
+    flex-direction: column;
+  }
+
+  #subscribe .subscribe-field {
+    width: auto;
   }
 }

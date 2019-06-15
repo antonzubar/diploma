@@ -61,7 +61,13 @@
                 <span class="headline-text">Des<span>tination</span></span>
             </div>
             <div class="col-lg-3 text-right my-auto">
-                <span class="helper-text"><img src="img/destination/info-icon.png"> see basic regulation</span>
+                <span class="helper-text"><img 
+                    src="img/destination/info-icon.png" 
+                    data-toggle="tooltip" 
+                    data-placement="bottom" 
+                    title="I don't know what should be there. Some basic regulation I think. Some text will be helpful in any case"> 
+                    see basic regulation
+                </span>
             </div>
         </div>
         <div class="destination-second-row row justify-content-around">
@@ -75,7 +81,7 @@
         </div>
         <div class="destination-third-row row justify-content-around">
             <div class="col-5">
-                    <input type="text" placeholder="search destination">
+                    <input id="destinationSearch" type="text" placeholder="search destination" onkeyup="mySearch()">
                 </div>
             <div class="col-5 d-flex justify-content-end">
                     <div class="switcher">
@@ -86,11 +92,11 @@
                 </div>
         </div>
         <div class="destination-fourth-row row">
-            <div class="container">
+            <div class="container" id="myUL">
                 <div class="jumbotron page" id="page1">
-                  <div class="container big-place row">
+                  <div class="container big-place test row">
                         <div class="col-7"></div>
-                        <div class="big-place__description col-lg-5 d-flex flex-column">
+                        <div class="big-place__description test col-lg-5 d-flex flex-column">
                             <img class="big-place__object-type align-self-start" src="img/destination/object-types/leisure.png">
                             <span class="big-place__object-name">Batu</span>
                             <p class="big-place__object-description">
@@ -101,8 +107,8 @@
                                 A population of 190,000 people, it lies on the southern slopes of Gunung Welirang. Its population largely consists of Javanese.
                             </p>
                         </div>
-                  </div>
-                  <div class="container small-place row">
+                    </div>
+                  <div class="container small-place test row">
                       <div class="small-place__description col-lg-7 d-flex flex-column">
                           <span class="small-place__object-name">Bromo</span>
                           <p class="small-place__object-description">
@@ -118,7 +124,7 @@
                     </div>
                   </div>
                 <div class="jumbotron page" id="page2">
-                    <div class="container big-place row">
+                    <div class="container big-place test row">
                         <div class="col-7"></div>
                         <div class="big-place__description col-lg-5 d-flex flex-column">
                             <img class="big-place__object-type align-self-start" src="img/destination/object-types/leisure.png">
@@ -132,7 +138,7 @@
                             </p>
                         </div>
                   </div>
-                  <div class="container small-place row">
+                  <div class="container small-place test row">
                       <div class="small-place__description col-lg-7 d-flex flex-column">
                           <span class="small-place__object-name">Hromo</span>
                           <p class="small-place__object-description">
@@ -148,7 +154,7 @@
                     </div>
                 </div>
                 <div class="jumbotron page" id="page3">
-                    <div class="container big-place row">
+                    <div class="container big-place test row">
                         <div class="col-7"></div>
                         <div class="big-place__description col-lg-5 d-flex flex-column">
                             <img class="big-place__object-type align-self-start" src="img/destination/object-types/leisure.png">
@@ -162,7 +168,7 @@
                             </p>
                         </div>
                   </div>
-                  <div class="container small-place row">
+                  <div class="container small-place test row">
                       <div class="small-place__description col-lg-7 d-flex flex-column">
                           <span class="small-place__object-name">Kasumi</span>
                           <p class="small-place__object-description">
@@ -178,7 +184,7 @@
                     </div>
                 </div>
                 <div class="jumbotron page" id="page4">
-                    <div class="container big-place row">
+                    <div class="container big-place test row">
                         <div class="col-7"></div>
                         <div class="big-place__description col-lg-5 d-flex flex-column">
                             <img class="big-place__object-type align-self-start" src="img/destination/object-types/leisure.png">
@@ -192,7 +198,7 @@
                             </p>
                         </div>
                   </div>
-                  <div class="container small-place row">
+                  <div class="container small-place test row">
                       <div class="small-place__description col-lg-7 d-flex flex-column">
                           <span class="small-place__object-name">Sasuke</span>
                           <p class="small-place__object-description">
@@ -208,7 +214,7 @@
                     </div>
                 </div>
                 <div class="jumbotron page" id="page5">
-                    <div class="container big-place row">
+                    <div class="container big-place test row">
                         <div class="col-7"></div>
                         <div class="big-place__description col-lg-5 d-flex flex-column">
                             <img class="big-place__object-type align-self-start" src="img/destination/object-types/leisure.png">
@@ -222,7 +228,7 @@
                             </p>
                         </div>
                   </div>
-                  <div class="container small-place row">
+                  <div class="container small-place test row">
                       <div class="small-place__description col-lg-7 d-flex flex-column">
                           <span class="small-place__object-name">Sakura</span>
                           <p class="small-place__object-description">
@@ -238,7 +244,7 @@
                     </div>
                 </div>
                 <div class="jumbotron page" id="page6">
-                    <div class="container big-place row">
+                    <div class="container big-place test row">
                         <div class="col-7"></div>
                         <div class="big-place__description col-lg-5 d-flex flex-column">
                             <img class="big-place__object-type align-self-start" src="img/destination/object-types/leisure.png">
@@ -252,7 +258,7 @@
                             </p>
                         </div>
                   </div>
-                  <div class="container small-place row">
+                  <div class="container small-place test row">
                       <div class="small-place__description col-lg-7 d-flex flex-column">
                           <span class="small-place__object-name">Tsunade</span>
                           <p class="small-place__object-description">
@@ -415,11 +421,11 @@
     <div class="green-background"></div>
     <div class="container">
         <div class="subscribe-row row">
-            <div class="col-6 my-auot">
+            <div class="col-lg-6 my-auto">
                 <span class="headline-text">Keep in Touch</span>
                 <p class="paragraph-text">We Will Give you latest information about Malang</p>
             </div>
-            <form class="col-6 text-right my-auto">
+            <form class="col-lg-6 text-right my-auto">
                 <input class="subscribe-field" type="text" placeholder="Type Email Here for Subscribe" required>
                 <button class="subscribe-button" type="submit">></button>
             </form>
@@ -429,15 +435,15 @@
 <section id="footer">
     <div class="container">
         <div class="footer-row row">
-            <ul class="footer-links col-3">
+            <ul class="footer-links col-6">
                 <li><a href="">Term & Condition</a></li>
                 <li><a href="">Policy</a></li>
                 <li><a href="">Privacy</a></li>
             </ul>
-            <ul class="footer-social col-2 text-right">
-                <li><a href=""><img src="img/footer/facebook.png" alt="facebook"></a></li>
-                <li><a href=""><img src="img/footer/twitter.png" alt="twitter"></a></li>
-                <li><a href=""><img src="img/footer/instagram.png" alt="instargam"></a></li>
+            <ul class="footer-social col-6 text-right">
+                <li><a href="https://facebook.com" target="_blank"><img src="img/footer/facebook.png" alt="facebook"></a></li>
+                <li><a href="https://twitter.com" target="_blank"><img src="img/footer/twitter.png" alt="twitter"></a></li>
+                <li><a href="https://instagram.com" target="_blank"><img src="img/footer/instagram.png" alt="instargam"></a></li>
             </ul>
         </div>
     </div>
@@ -464,5 +470,6 @@
 <script src="/scripts/paging.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.js'></script>
 <script src="/scripts/dragndrop.js"></script>
+<script src="/scripts/search.js"></script>
 </body>
 </html>

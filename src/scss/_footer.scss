@@ -42,6 +42,11 @@
 
     li {
       display: inline-block;
+      border-radius: 50%;
+
+      &:hover {
+        background-color: #01a2a6;
+      }
     }
   }
 
