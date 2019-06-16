@@ -18,8 +18,11 @@ function mySearch() {
 
   if (filter == "") {
     ul.style.display = "";
+    console.log("big cards should be displayed");
+    searchList.style.display = "none";
   } else {
     ul.style.display = "none";
+    searchList.style.display = "";
     }
 
   // Loop through all list items, and hide those who don't match the search query
